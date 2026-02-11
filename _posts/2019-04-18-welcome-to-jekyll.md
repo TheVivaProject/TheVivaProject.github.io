@@ -3,6 +3,8 @@ title: "Welcome to JekyLL!"
 date: 2019-04-18T15:34:30-04:00
 categories:
   - blog
+header:
+  teaser: /assets/images/teasers/owl1.jpg
 tags:
   - Jekyll
   - update
