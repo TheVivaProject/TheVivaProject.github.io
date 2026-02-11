@@ -88,3 +88,10 @@
   padding-right: 0rem;
 }
 
+/* Tighten spacing between top nav (masthead) and hero on home */
+.layout--home .page__hero,
+.layout--home .page__hero--overlay {
+  margin-top: 0 !important;
+  padding-top: 1rem !important;   /* try 0.5rem–2rem */
+  padding-bottom: 1rem !important;
+}
