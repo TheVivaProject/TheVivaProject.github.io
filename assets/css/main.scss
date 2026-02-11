@@ -78,3 +78,13 @@
 .masthead__menu .site-logo {
   padding: 0.25rem 0 !important; /* gives it a little breathing room */
 }
+
+/* Center the main content area on the home page */
+.layout--home .initial-content {
+  max-width: 980px;         /* adjust: 900–1100 */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
