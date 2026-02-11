@@ -67,3 +67,9 @@
   .hero { padding: 2.5rem 0 1.5rem 0; }
   .hero__title { font-size: 2.1rem; }
 }
+
+/* Bigger logo in the top masthead */
+.masthead__menu .site-logo img {
+  max-height: 52px;   /* try 48–72 */
+  width: auto;
+}
