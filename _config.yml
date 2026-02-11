@@ -24,6 +24,11 @@ github_username: username
 minimal_mistakes_skin: default
 search: true
 
+# Masthead logo (shows in the top navigation bar)
+logo: "/assets/images/the-viva-project-logo.png"   # <-- change to your file path
+masthead_title: " "                                # optional: hides the text title
+
+
 url: "https://username.github.io"
 baseurl: ""
 
