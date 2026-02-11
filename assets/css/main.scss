@@ -5,11 +5,14 @@
 
 
 /* List view: thumbnail on the left, text on the right (Second Breakfast-ish) */
-.archive__item {
+
+.archive .archive__item,
+.layout--home .archive__item {
   display: flex;
   gap: 1.25rem;
   align-items: flex-start;
 }
+
 
 .archive__item-teaser {
   flex: 0 0 180px; /* thumbnail column width */
@@ -22,6 +25,7 @@
   border-radius: 6px;
 }
 
-.archive__item-body {
+.archive .archive__item-body,
+.layout--home .archive__item-body {
   flex: 1 1 auto;
 }
