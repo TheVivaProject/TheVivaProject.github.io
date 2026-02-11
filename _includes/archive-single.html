@@ -1,0 +1,33 @@
+{% comment %}
+  Override of Minimal Mistakes archive-single.html
+  Goal: show header.teaser thumbnails in LIST view (Second Breakfast-style).
+{% endcomment %}
+
+{% assign post = include.post %}
+
+{% assign teaser = post.header.teaser | default: site.teaser %}
+{% if teaser %}
+  {% assign teaser = teaser | relative_url %}
+{% endif %}
+
+<article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+  {% if teaser %}
+    <div class="archive__item-teaser">
+      <a href="{{ post.url | relative_url }}">
+        <img src="{{ teaser }}" alt="">
+      </a>
+    </div>
+  {% endif %}
+
+  <div class="archive__item-body">
+    <h2 class="archive__item-title" itemprop="headline">
+      <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
+    </h2>
+
+    {% if post.excerpt %}
+      <div class="archive__item-excerpt" itemprop="description">
+        {{ post.excerpt | markdownify | strip_html | truncate: 220 }}
+      </div>
+    {% endif %}
+  </div>
+</article>
