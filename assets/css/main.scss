@@ -68,8 +68,13 @@
   .hero__title { font-size: 2.1rem; }
 }
 
-/* Bigger logo in the top masthead */
+
+/* Make the top-left masthead logo bigger */
 .masthead__menu .site-logo img {
-  max-height: 72px;   /* try 48–72 */
-  width: auto;
+  max-height: 120px !important;  /* try 80–120 */
+  width: auto !important;
+}
+
+.masthead__menu .site-logo {
+  padding: 0.25rem 0 !important; /* gives it a little breathing room */
 }
