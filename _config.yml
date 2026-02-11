@@ -100,7 +100,7 @@ defaults:
       share: false
       related: false
       header:
-        teaser: /assets/images/teasers/default.png
+        teaser: /assets/images/teasers/newplot.png
   - scope:
       path: ""
       type: pages
